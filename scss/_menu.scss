@@ -1,0 +1,119 @@
+.entradas{
+    margin-top: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    figure{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 10px 25px rgba(0,0,0,0.50);
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-out;
+        }
+        .entradas__texto{
+            padding: 15%;
+            text-transform: uppercase;
+            color: whitesmoke;
+            font-family: 'Nunito', sans-serif;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height:100%;
+            background: rgba(10, 18, 20, 0.7);
+            opacity: 0;
+            visibility: hidden;
+            text-align: center; 
+            .entradas__titulo{
+                font-size: $fontSize;
+                padding: 2%;
+                padding-left: 5.5%;
+            } 
+            .entradas__ul{
+                list-style: none;
+                font-size: $fontSize/2.5;
+            }
+           
+        }
+        &:hover{
+            .entradas__texto{
+            opacity: 1;
+            visibility: visible;
+            }
+            
+        }
+
+
+    }
+
+
+}
+
+
+.pizzas{
+    @extend .entradas;
+    figure{
+       @extend figure;
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-out;
+           
+        }
+        .pizzas__texto{
+            @extend .entradas__texto;
+            padding-top: 30%;
+            .pizzas__titulo{
+                @extend .entradas__titulo;
+            } 
+            .pizzas__ul{
+                @extend .entradas__ul;
+            }
+           
+        }
+        &:hover{
+            .pizzas__texto{
+            opacity: 1;
+            visibility: visible;
+            }
+            
+        }
+
+
+    }
+
+}
+
+
+.burger{
+    text-align: center;
+    background-color: $fondo2;
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    opacity: 0.5;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    .burger__titulo{
+        font-size: $fontSize/2;
+    }
+    .burger__img{
+        border-radius: 2%;
+    }
+    .burger__text{
+        .burger__ul{
+        list-style: none;
+        padding-left: 0%    
+    }
+    }
+    &:hover{
+        opacity: 1;
+        width: 24rem;
+        transition: all 2s;
+    }
+}
+

@@ -1,0 +1,17 @@
+footer {
+    background-color: $fondo2;
+
+    .footer__titulo{
+        padding: 3%;
+        text-align: center;
+        color: whitesmoke;
+        font-family: 'Nunito', sans-serif;
+    }
+    .footer__ol{
+        .footer__li{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+    }   
+}
+

@@ -1,0 +1,25 @@
+header{
+    margin-bottom: 2%;
+    nav{
+        .headerbg{
+            background-color: $fondo2;
+        }
+        a{
+            width: 70%;
+
+        }
+        .logoImg{
+            width: 30%;
+        }
+        .pedido__a{
+            width: max-content;
+        }
+        ul {
+            li{
+                font-size: 1.3em;
+                font-family: 'Nunito', sans-serif;
+
+            }
+        }
+    }
+}

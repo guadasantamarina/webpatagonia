@@ -1,0 +1,149 @@
+
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$ancho: 720px; 
+$fontSize: 3rem;
+
+@import "colores";
+@import "header";
+@import "galeria";
+@import "pedidos";
+@import "formulario";
+@import "footer";
+@import "generales";
+@import "index";
+@import "menu";
+
+
+
+
+
+@media only screen and (max-width: 800px){   
+        .nosotros{
+        text-align: center;
+        grid-template-columns: 1 auto;
+        grid-template-rows: 2 auto;
+        grid-template-areas: 
+        "imagen" 
+        "texto"
+        ;
+        gap: 3%;
+        .nosotros__img{
+            margin-right: 27%;
+            width: 75%;
+            border-radius: 5%;
+            margin-bottom: 0 auto;
+        }
+        .nosotros__texto{
+            text-align: center;
+            margin: 3%;
+            margin-bottom: 10%;
+        }
+    }
+    .restricciones{
+        text-align: center;
+        grid-template-columns: 1 auto;
+        grid-template-rows: 2 auto;
+        grid-template-areas: 
+        "imgRestricciones"
+        "textoRestricciones"
+        ;
+        .restricciones__img{
+            margin-left: 10%;
+            width: 80%;
+            text-align: center;
+            border-radius: 5%;
+        }
+        .restricciones__texto{
+            margin: 3%;
+            margin-bottom: 10%;
+
+        }
+        
+    }
+
+    .fotos {
+    
+        grid-template-columns: 1 auto;
+        grid-template-rows: 10 auto;
+        grid-template-areas:
+            "titulo1"
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "titulo2"
+            "foto5"
+            "foto6"
+            "foto7"
+            "foto8"
+        ;
+    }
+
+    
+
+    .pedidos__titulo{
+        text-align: center;
+    }
+    .pedidos__texto{
+        text-align: center;
+    }
+
+    .entradas__texto{
+        .entradas__titulo{
+            font-size: $fontSize/5;
+        }
+        .entradas__ul{
+            font-size: $fontSize/5;
+        }
+    }
+
+    .pizzas__texto{
+        .pizzas__titulo{
+            font-size: $fontSize/2.5;
+        }
+        .pizzas__ul{
+            font-size: $fontSize/5;
+        }
+    }
+
+    .pedidos__a{
+        width: 70%;
+        text-align: left;
+    }
+
+    .contacto{
+        flex-direction: column;
+       
+        form{
+            text-align: center;
+            font-family: $fontSize/2.7;
+            border-left: none;
+            .textArea{
+                width: 80%;
+                margin: 2%;
+            }
+
+        }
+    }
+
+
+   
+
+    
+
+    
+  
+}
+
+
+
+
+  
+

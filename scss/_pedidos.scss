@@ -1,0 +1,46 @@
+.pedidos{
+    background-image: url(../media/bar-adentro.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 600px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    align-content: center;
+    .pedidos__titulo{
+        font-size: $fontSize;
+        color: whitesmoke;
+        text-align: left;
+        padding: 5%;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Nunito', sans-serif;
+
+     }
+    .linkWhatsapp{
+        font-size: $fontSize/2.5;
+        font-family: 'Nunito', sans-serif;
+        color: whitesmoke;
+        text-align: right;
+        padding: 5%;
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            text-align: right;
+          
+        }
+    
+        
+    
+    }
+
+
+}
+
+
+
+.pedidos__logo {
+    width: 1.8rem;
+}
+

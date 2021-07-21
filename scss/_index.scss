@@ -1,0 +1,78 @@
+.carousel{
+    width: 100%;
+}
+
+
+.nosotros{
+    width: 85%;
+    @include condicion ($fondo1);
+    background-color: $fondo1;
+    margin:1%;
+    margin-top: 13%;
+    display:grid;
+    grid-template-columns: 2 auto;
+    grid-template-rows: 1 auto;
+    grid-template-areas: 
+    "imagen texto"
+    ;
+    gap: 15%;
+
+    .nosotros__img{
+        width: 100%;
+        grid-area: imagen;
+        margin-left: 10%;
+       img{
+           width: 100%;
+           border-radius: 5%;
+
+       }
+    }
+
+    
+
+}
+
+@mixin textosIndex ($gridArea) {
+    grid-area: $gridArea;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nosotros__texto{
+    @include textosIndex(texto)
+
+}
+
+.restricciones{
+    width: 70% auto;
+    @include condicion ($fondo3);
+    background-color: $fondo3;
+    margin: 1%;
+    padding: 5%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 2 auto;
+    grid-template-rows: 1 auto;
+    grid-template-areas: 
+    "textoRestricciones imgRestricciones"
+    ;
+    gap: 5%;
+    .restricciones__img{
+        grid-area: imgRestricciones;
+        img{
+            width: 80%;
+            border-radius: 5%;
+            margin-left: 15%;
+
+        }
+    }
+    .restricciones__texto{
+        @include textosIndex (textoRestricciones)
+    }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+.bodyFotos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+    "header"
+    "mainFotos"
+    "footer";
+
+}
+
+.galeria__h1{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: $fontSize;
+
+}
+
+.fotos {
+    grid-area: mainFotos;
+    display: grid;
+    grid-template-columns: 4 auto;
+    grid-template-rows: 6 auto;
+    grid-template-areas:
+        "titulo1  titulo1 titulo1 titulo1"
+        "foto1 foto1  foto2 foto3"
+        "foto1 foto1  foto4 foto4"
+        "titulo2 titulo2 titulo2 titulo2"
+        "foto8 foto8 foto7 foto7"
+        "foto8 foto8 foto5 foto6"
+    ;
+    
+}
+.fotos__titulo {
+    grid-area: titulo1;
+    font-family: 'Nunito', sans-serif;
+    
+
+}
+.fotos__titulo2 {
+    grid-area: titulo2;
+    font-family: 'Nunito', sans-serif;
+
+}
+.fotos__uno {
+    grid-area: foto1;
+}
+.fotos__dos {
+    grid-area: foto2;
+}
+.fotos__tres {
+    grid-area: foto3;
+}
+.fotos__cuatro {
+    grid-area: foto4;
+}
+.fotos__cinco {
+    grid-area: foto5;
+}
+.fotos__seis {
+    grid-area: foto6;
+}
+.fotos__siete {
+    grid-area: foto7;
+}
+.fotos__ocho {
+    grid-area: foto8;
+}
+.fotos__uno, .fotos__dos, .fotos__tres, .fotos__cuatro, .fotos__cuatro, .fotos__cinco, .fotos__seis, .fotos__siete, .fotos__ocho {
+    text-align: center;
+}
+.fotoGaleria {
+    width: 85%;
+    height: 85%;
+    opacity: 0.3;
+}
+    
+.fotoGaleria:hover {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: all 2s;
+}
+

@@ -1,0 +1,18 @@
+$fondo3: #dbd7d6d1;
+$fondo2: #262424; 
+$fondo1: #151414; 
+
+$color1:#E5E7E9;
+$color2:#080707; 
+
+@mixin condicion ($fondo){
+    background-color:($fondo);
+    @if $fondo == $fondo1{
+        color:$color1
+    }
+
+        @else if $fondo == $fondo3{
+            color: $color2;
+        }
+
+}

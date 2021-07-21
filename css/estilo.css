@@ -1,0 +1,342 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  margin-bottom: 2%; }
+  header nav .headerbg {
+    background-color: #262424; }
+  header nav a {
+    width: 70%; }
+  header nav .logoImg {
+    width: 30%; }
+  header nav .pedido__a {
+    width: max-content; }
+  header nav ul li {
+    font-size: 1.3em;
+    font-family: 'Nunito', sans-serif; }
+
+.bodyFotos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  grid-template-areas: "header" "mainFotos" "footer"; }
+
+.galeria__h1 {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 3rem; }
+
+.fotos {
+  grid-area: mainFotos;
+  display: grid;
+  grid-template-columns: 4 auto;
+  grid-template-rows: 6 auto;
+  grid-template-areas: "titulo1  titulo1 titulo1 titulo1" "foto1 foto1  foto2 foto3" "foto1 foto1  foto4 foto4" "titulo2 titulo2 titulo2 titulo2" "foto8 foto8 foto7 foto7" "foto8 foto8 foto5 foto6"; }
+
+.fotos__titulo {
+  grid-area: titulo1;
+  font-family: 'Nunito', sans-serif; }
+
+.fotos__titulo2 {
+  grid-area: titulo2;
+  font-family: 'Nunito', sans-serif; }
+
+.fotos__uno {
+  grid-area: foto1; }
+
+.fotos__dos {
+  grid-area: foto2; }
+
+.fotos__tres {
+  grid-area: foto3; }
+
+.fotos__cuatro {
+  grid-area: foto4; }
+
+.fotos__cinco {
+  grid-area: foto5; }
+
+.fotos__seis {
+  grid-area: foto6; }
+
+.fotos__siete {
+  grid-area: foto7; }
+
+.fotos__ocho {
+  grid-area: foto8; }
+
+.fotos__uno, .fotos__dos, .fotos__tres, .fotos__cuatro, .fotos__cuatro, .fotos__cinco, .fotos__seis, .fotos__siete, .fotos__ocho {
+  text-align: center; }
+
+.fotoGaleria {
+  width: 85%;
+  height: 85%;
+  opacity: 0.3; }
+
+.fotoGaleria:hover {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transition: all 2s; }
+
+.pedidos {
+  background-image: url(../media/bar-adentro.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 600px;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  align-content: center; }
+  .pedidos .pedidos__titulo {
+    font-size: 3rem;
+    color: whitesmoke;
+    text-align: left;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Nunito', sans-serif; }
+  .pedidos .linkWhatsapp {
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+    text-align: right;
+    padding: 5%; }
+    .pedidos .linkWhatsapp a {
+      text-decoration: none;
+      color: whitesmoke;
+      text-align: right; }
+
+.pedidos__logo {
+  width: 1.8rem; }
+
+.contacto {
+  background-color: #151414;
+  display: flex;
+  flex-direction: row; }
+  .contacto .contacto__foto {
+    margin: 5%;
+    align-content: center; }
+    .contacto .contacto__foto .fotoStaff {
+      max-width: 100%; }
+  .contacto form {
+    padding-left: 3%;
+    margin: 5%;
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    border-left: white solid 1px;
+    font-size: 1.30435rem; }
+
+.contacto__titulo {
+  color: whitesmoke;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 3rem; }
+
+.inputAnimation {
+  width: 6em;
+  height: 1em;
+  transition: all 2s; }
+
+.inputAnimation:hover {
+  width: 10em;
+  height: 1.5em;
+  font-size: 1em; }
+
+footer {
+  background-color: #262424; }
+  footer .footer__titulo {
+    padding: 3%;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif; }
+  footer .footer__ol .footer__li {
+    text-decoration: none;
+    color: whitesmoke; }
+
+body {
+  background-color: #151414; }
+
+.carousel {
+  width: 100%; }
+
+.nosotros {
+  width: 85%;
+  background-color: #151414;
+  color: #E5E7E9;
+  background-color: #151414;
+  margin: 1%;
+  margin-top: 13%;
+  display: grid;
+  grid-template-columns: 2 auto;
+  grid-template-rows: 1 auto;
+  grid-template-areas: "imagen texto";
+  gap: 15%; }
+  .nosotros .nosotros__img {
+    width: 100%;
+    grid-area: imagen;
+    margin-left: 10%; }
+    .nosotros .nosotros__img img {
+      width: 100%;
+      border-radius: 5%; }
+
+.nosotros__texto {
+  grid-area: texto;
+  font-family: 'Nunito', sans-serif; }
+
+.restricciones {
+  width: 70% auto;
+  background-color: #dbd7d6d1;
+  color: #080707;
+  background-color: #dbd7d6d1;
+  margin: 1%;
+  padding: 5%;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 2 auto;
+  grid-template-rows: 1 auto;
+  grid-template-areas: "textoRestricciones imgRestricciones";
+  gap: 5%; }
+  .restricciones .restricciones__img {
+    grid-area: imgRestricciones; }
+    .restricciones .restricciones__img img {
+      width: 80%;
+      border-radius: 5%;
+      margin-left: 15%; }
+  .restricciones .restricciones__texto {
+    grid-area: textoRestricciones;
+    font-family: 'Nunito', sans-serif; }
+
+.entradas, .pizzas {
+  margin-top: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .entradas figure, .pizzas figure {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 10px 25px rgba(0, 0, 0, 0.5); }
+    .entradas figure img, .pizzas figure img {
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-out; }
+    .entradas figure .entradas__texto, .pizzas figure .entradas__texto, .pizzas figure .pizzas__texto {
+      padding: 15%;
+      text-transform: uppercase;
+      color: whitesmoke;
+      font-family: 'Nunito', sans-serif;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 18, 20, 0.7);
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+      .entradas figure .entradas__texto .entradas__titulo, .pizzas figure .entradas__texto .entradas__titulo, .pizzas figure .pizzas__texto .entradas__titulo, .pizzas figure .pizzas__texto .pizzas__titulo {
+        font-size: 3rem;
+        padding: 2%;
+        padding-left: 5.5%; }
+      .entradas figure .entradas__texto .entradas__ul, .pizzas figure .entradas__texto .entradas__ul, .pizzas figure .pizzas__texto .entradas__ul, .pizzas figure .pizzas__texto .pizzas__ul {
+        list-style: none;
+        font-size: 1.2rem; }
+    .entradas figure:hover .entradas__texto, .pizzas figure:hover .entradas__texto, .pizzas figure:hover .pizzas__texto {
+      opacity: 1;
+      visibility: visible; }
+
+.pizzas figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out; }
+
+.pizzas figure .pizzas__texto {
+  padding-top: 30%; }
+
+.pizzas figure:hover .pizzas__texto {
+  opacity: 1;
+  visibility: visible; }
+
+.burger {
+  text-align: center;
+  background-color: #262424;
+  color: whitesmoke;
+  font-family: 'Nunito', sans-serif;
+  opacity: 0.5;
+  margin-top: 10%;
+  margin-bottom: 5%; }
+  .burger .burger__titulo {
+    font-size: 1.5rem; }
+  .burger .burger__img {
+    border-radius: 2%; }
+  .burger .burger__text .burger__ul {
+    list-style: none;
+    padding-left: 0%; }
+  .burger:hover {
+    opacity: 1;
+    width: 24rem;
+    transition: all 2s; }
+
+@media only screen and (max-width: 800px) {
+  .nosotros {
+    text-align: center;
+    grid-template-columns: 1 auto;
+    grid-template-rows: 2 auto;
+    grid-template-areas: "imagen"  "texto";
+    gap: 3%; }
+    .nosotros .nosotros__img {
+      margin-right: 27%;
+      width: 75%;
+      border-radius: 5%;
+      margin-bottom: 0 auto; }
+    .nosotros .nosotros__texto {
+      text-align: center;
+      margin: 3%;
+      margin-bottom: 10%; }
+  .restricciones {
+    text-align: center;
+    grid-template-columns: 1 auto;
+    grid-template-rows: 2 auto;
+    grid-template-areas: "imgRestricciones" "textoRestricciones"; }
+    .restricciones .restricciones__img {
+      margin-left: 10%;
+      width: 80%;
+      text-align: center;
+      border-radius: 5%; }
+    .restricciones .restricciones__texto {
+      margin: 3%;
+      margin-bottom: 10%; }
+  .fotos {
+    grid-template-columns: 1 auto;
+    grid-template-rows: 10 auto;
+    grid-template-areas: "titulo1" "foto1" "foto2" "foto3" "foto4" "titulo2" "foto5" "foto6" "foto7" "foto8"; }
+  .pedidos__titulo {
+    text-align: center; }
+  .pedidos__texto {
+    text-align: center; }
+  .entradas__texto .entradas__titulo, .pizzas figure .pizzas__texto .entradas__titulo, .pizzas figure .pizzas__texto .pizzas__titulo {
+    font-size: 0.6rem; }
+  .entradas__texto .entradas__ul, .pizzas figure .pizzas__texto .entradas__ul, .pizzas figure .pizzas__texto .pizzas__ul {
+    font-size: 0.6rem; }
+  .pizzas__texto .pizzas__titulo {
+    font-size: 1.2rem; }
+  .pizzas__texto .pizzas__ul {
+    font-size: 0.6rem; }
+  .pedidos__a {
+    width: 70%;
+    text-align: left; }
+  .contacto {
+    flex-direction: column; }
+    .contacto form {
+      text-align: center;
+      font-family: 1.11111rem;
+      border-left: none; }
+      .contacto form .textArea {
+        width: 80%;
+        margin: 2%; } }
