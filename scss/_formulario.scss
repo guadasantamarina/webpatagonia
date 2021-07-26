@@ -1,30 +1,34 @@
 .contacto{
-    background-color: $fondo1;
     display: flex;
     flex-direction: row;
-
     .contacto__foto{
         margin: 5%;
         align-content: center;
         .fotoStaff{
            max-width: 100%;
+           border-radius: 10px;
          }
     }
     form{
-        padding-left: 3%;
+        @include condicion ($fondo4);
         margin: 5%;
         color: whitesmoke;
         font-family: 'Nunito', sans-serif;
         border-left: white solid 1px;
         font-size: $fontSize/2.3;
+        border-radius: 10px;
+        padding: 3%;
 
     }
 
 }
 
 .contacto__titulo{
-    color: whitesmoke;
-    font-family: 'Nunito', sans-serif;
+    @include condicion ($fondo3);
+    margin: 3%;
+    font-family: AmsiProNarw-Ultra;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
     text-align: center;
     font-size: $fontSize;
 }

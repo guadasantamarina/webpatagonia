@@ -1,20 +1,20 @@
-.bodyFotos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    grid-template-areas:
-    "header"
-    "mainFotos"
-    "footer";
+.bodyOscuro{
+    background-color: $fondo2;
+}
 
+.headerStatic{
+    position: static;
 }
 
 .galeria__h1{
-    font-family: 'Nunito', sans-serif;
+    font-family: AmsiProNarw-Ultra;
     text-align: center;
-    font-size: $fontSize;
-
+    font-size: $fontSize*1.5;
+    margin: 3%;
+    letter-spacing: 0.1em;
+    
 }
+
 
 .fotos {
     grid-area: mainFotos;
@@ -32,14 +32,28 @@
     
 }
 .fotos__titulo {
+    width: 100%;
     grid-area: titulo1;
-    font-family: 'Nunito', sans-serif;
-    
-
+    h2{
+    font-family: AmsiProNarw-Ultra;
+    letter-spacing: 0.1em;
+    padding: 4%;
+    font-size: $fontSize;
+    text-align: left;
+    width: 100%;        
+    }
 }
 .fotos__titulo2 {
     grid-area: titulo2;
-    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    h2{
+        width: 100%;
+        font-family: AmsiProNarw-Ultra;
+        padding: 1%;
+        letter-spacing: 0.1em;
+        font-size: $fontSize;
+        text-align: left;
+    }
 
 }
 .fotos__uno {
@@ -68,17 +82,17 @@
 }
 .fotos__uno, .fotos__dos, .fotos__tres, .fotos__cuatro, .fotos__cuatro, .fotos__cinco, .fotos__seis, .fotos__siete, .fotos__ocho {
     text-align: center;
+    width: 100%;
 }
 .fotoGaleria {
-    width: 85%;
+    width: 80%;
     height: 85%;
     opacity: 0.3;
 }
     
 .fotoGaleria:hover {
     opacity: 1;
-    width: 100%;
-    height: 100%;
+    width: 95%;
     transition: all 2s;
 }
 

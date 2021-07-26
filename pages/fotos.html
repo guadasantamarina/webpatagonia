@@ -8,15 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/f4a94d8672.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Paytone+One&display=swap" rel="stylesheet">
     <title>Point Bar</title>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark  mt-2">
+<body class="bodyOscuro">
+    <header class="headerStatic">
+        <nav class="navbar navbar-expand-lg">
             <div class="headerbg container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../media/logo.png" alt="logo" class="logoImg ms-auto">
+                    <img src="../media/logo2.PNG" alt="logo" class="logoImg ms-auto">
                 </a>
           
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,18 +27,18 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown m-3">
-                            <a class="aCenter nav-link dropdown-toggle" href="fotos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galería</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="fotos.html#seccionUstedes">Ustedes</a></li>
-                                <li><a class="dropdown-item" href="fotos.html#seccionNuestraComida">Nuestra Comida</a></li>
+                            <a class="aCenter nav-link" href="fotos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galería</a>
+                            <ul class="submenu__ul dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="submenu__a dropdown-item" href="fotos.html#seccionUstedes">Ustedes</a></li>
+                                <li><a class="submenu__a dropdown-item" href="fotos.html#seccionNuestraComida">Nuestra Comida</a></li>
                             </ul>
                          </li>
                         <li class="nav-item dropdown m-3 ml-5">
-                            <a class="aCenter nav-link dropdown-toggle" href="menu.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="menu.html#seccionEntradas">Entradas</a></li>
-                            <li><a class="dropdown-item" href="menu.html#seccionPizzas">Pizzas</a></li>
-                            <li><a class="dropdown-item" href="menu.html#seccionBurgers">Burgers</a></li>
+                            <a class="aCenter nav-link" href="menu.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                            <ul class="submenu__ul dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="submenu__a dropdown-item" href="menu.html#seccionEntradas">Entradas</a></li>
+                                <li><a class="submenu__a dropdown-item" href="menu.html#seccionPizzas">Pizzas</a></li>
+                                <li><a class="submenu__a dropdown-item" href="menu.html#seccionBurgers">Burgers</a></li>
                             </ul>
                         </li>
                         <li class="nav-item m-3">
@@ -53,13 +55,13 @@
     </header>
     
     
-    <h1 class="galeria__h1 text-light">Galería de Fotos</h1>
+    <h1 class="galeria__h1 text-light wow animate__animated animate__fadeIn" id="seccionUstedes">Galería de Fotos</h1>
 
 
    <main class="fotos" >
 
 
-        <div class="fotos__titulo"> <h2 class="tituloGaleria text-light m-5" id="seccionUstedes"> Ustedes</h2></div>
+        <div class="fotos__titulo"> <h2 class="tituloGaleria text-light" > Ustedes</h2></div>
         <div class="fotos__uno"><img class="fotoGaleria Uno" src="../media/chicos-bar.jpg" alt="dos-chicos-disfrutando-dentro-del-bar"></div>
         <div class="fotos__dos"> <img class="fotoGaleria Dos" src="../media/chicas-vereda.jpg" alt="tres-amigas-sonriendo-disfrutando-en-nuestra-vereda"></div>
         <div class="fotos__tres"><img class="fotoGaleria Tres" src="../media/mujeres-bar.jpg" alt="tres-chicas-sentadas-en-mesa-cervecera-adentro"></div>
@@ -74,14 +76,26 @@
    </main>
 
    
-   <footer  class="footer container-fluid bg-dark">
+   <footer  class="footer_light container-fluid">
         <h5 class="footer__titulo">Redes Sociales</h5>
-        <ol class="footer_ol breadcrumb">
-            <li class="footer_li breadcrumb-item"><a href="https://www.instagram.com/point.oficial/?hl=es-la">Instagram</a></li>
-            <li class="footer_li breadcrumb-item"><a href="https://www.facebook.com/pointpergamino">Facebook</a></li>
-            <li class="footer_li breadcrumb-item"><a href="https://wa.link/gu1vi3">Whatsapp</a></li>
-        </ol>
-    </footer>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/point.oficial/?hl=es-la">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/pointpergamino">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.link/gu1vi3">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>   
 
 
 
@@ -94,8 +108,10 @@
 
 
 
-
-
+<script src="/js.js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 
 

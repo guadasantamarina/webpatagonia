@@ -1,25 +1,48 @@
+body{
+    background-color: $fondo3;
+}
+
 header{
-    margin-bottom: 2%;
-    nav{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    .navbar{
+        padding: 0%;
         .headerbg{
-            background-color: $fondo2;
+            background-color: $fondo3;
+            padding: 0;
         }
         a{
             width: 70%;
-
+            padding: 0;
         }
         .logoImg{
-            width: 30%;
+            width: 25%;
         }
         .aCenter{
             width: max-content;
+            color: $color3;
         }
         ul {
             li{
-                font-size: 1.3em;
-                font-family: 'Nunito', sans-serif;
+                font-size: $fontSize/1.5;
+                font-family: AmsiProNarw-Ultra;
+                color: $fondo4;
 
             }
         }
+        .submenu__ul{
+            background-color: $fondo3;
+            border: none;
+            .submenu__a{
+                font-family: 'Nunito', sans-serif;
+                font-size: $fontSize/2;
+                margin: 2% auto;
+                color:$color3;
+                width: fit-content;
+                text-align: left;
+            }
+        }
+       
     }
 }

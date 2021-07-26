@@ -3,30 +3,57 @@
   padding: 0;
   box-sizing: border-box; }
 
-header {
-  margin-bottom: 2%; }
-  header nav .headerbg {
-    background-color: #262424; }
-  header nav a {
-    width: 70%; }
-  header nav .logoImg {
-    width: 30%; }
-  header nav .aCenter {
-    width: max-content; }
-  header nav ul li {
-    font-size: 1.3em;
-    font-family: 'Nunito', sans-serif; }
+@font-face {
+  font-family: AmsiProNarw-Ultra;
+  src: url(/fonts/AmsiProNarw-Ultra.ttf); }
 
-.bodyFotos {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 3fr;
-  grid-template-areas: "header" "mainFotos" "footer"; }
+body {
+  background-color: #dbd7d6d7; }
+
+header {
+  position: sticky;
+  top: 0%;
+  z-index: 1; }
+  header .navbar {
+    padding: 0%; }
+    header .navbar .headerbg {
+      background-color: #dbd7d6d7;
+      padding: 0; }
+    header .navbar a {
+      width: 70%;
+      padding: 0; }
+    header .navbar .logoImg {
+      width: 25%; }
+    header .navbar .aCenter {
+      width: max-content;
+      color: #2f522f; }
+    header .navbar ul li {
+      font-size: 2rem;
+      font-family: AmsiProNarw-Ultra;
+      color: #1f351f; }
+    header .navbar .submenu__ul {
+      background-color: #dbd7d6d7;
+      border: none; }
+      header .navbar .submenu__ul .submenu__a {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
+        margin: 2% auto;
+        color: #2f522f;
+        width: fit-content;
+        text-align: left; }
+
+.bodyOscuro {
+  background-color: #201e1e; }
+
+.headerStatic {
+  position: static; }
 
 .galeria__h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: AmsiProNarw-Ultra;
   text-align: center;
-  font-size: 3rem; }
+  font-size: 4.5rem;
+  margin: 3%;
+  letter-spacing: 0.1em; }
 
 .fotos {
   grid-area: mainFotos;
@@ -36,12 +63,26 @@ header {
   grid-template-areas: "titulo1  titulo1 titulo1 titulo1" "foto1 foto1  foto2 foto3" "foto1 foto1  foto4 foto4" "titulo2 titulo2 titulo2 titulo2" "foto8 foto8 foto7 foto7" "foto8 foto8 foto5 foto6"; }
 
 .fotos__titulo {
-  grid-area: titulo1;
-  font-family: 'Nunito', sans-serif; }
+  width: 100%;
+  grid-area: titulo1; }
+  .fotos__titulo h2 {
+    font-family: AmsiProNarw-Ultra;
+    letter-spacing: 0.1em;
+    padding: 4%;
+    font-size: 3rem;
+    text-align: left;
+    width: 100%; }
 
 .fotos__titulo2 {
   grid-area: titulo2;
-  font-family: 'Nunito', sans-serif; }
+  width: 100%; }
+  .fotos__titulo2 h2 {
+    width: 100%;
+    font-family: AmsiProNarw-Ultra;
+    padding: 1%;
+    letter-spacing: 0.1em;
+    font-size: 3rem;
+    text-align: left; }
 
 .fotos__uno {
   grid-area: foto1; }
@@ -68,17 +109,17 @@ header {
   grid-area: foto8; }
 
 .fotos__uno, .fotos__dos, .fotos__tres, .fotos__cuatro, .fotos__cuatro, .fotos__cinco, .fotos__seis, .fotos__siete, .fotos__ocho {
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .fotoGaleria {
-  width: 85%;
+  width: 80%;
   height: 85%;
   opacity: 0.3; }
 
 .fotoGaleria:hover {
   opacity: 1;
-  width: 100%;
-  height: 100%;
+  width: 95%;
   transition: all 2s; }
 
 .pedidos {
@@ -88,8 +129,7 @@ header {
   background-repeat: no-repeat;
   display: flex;
   height: 600px;
-  margin: 0 auto;
-  margin-bottom: 3%;
+  margin: 3%;
   align-content: center; }
   .pedidos .pedidos__titulo {
     font-size: 3rem;
@@ -114,25 +154,32 @@ header {
   width: 1.8rem; }
 
 .contacto {
-  background-color: #151414;
   display: flex;
   flex-direction: row; }
   .contacto .contacto__foto {
     margin: 5%;
     align-content: center; }
     .contacto .contacto__foto .fotoStaff {
-      max-width: 100%; }
+      max-width: 100%;
+      border-radius: 10px; }
   .contacto form {
-    padding-left: 3%;
+    background-color: #1f351f;
+    color: #E5E7E9;
     margin: 5%;
     color: whitesmoke;
     font-family: 'Nunito', sans-serif;
     border-left: white solid 1px;
-    font-size: 1.30435rem; }
+    font-size: 1.30435rem;
+    border-radius: 10px;
+    padding: 3%; }
 
 .contacto__titulo {
-  color: whitesmoke;
-  font-family: 'Nunito', sans-serif;
+  background-color: #dbd7d6d7;
+  color: #2f522f;
+  margin: 3%;
+  font-family: AmsiProNarw-Ultra;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   text-align: center;
   font-size: 3rem; }
 
@@ -147,38 +194,78 @@ header {
   font-size: 1em; }
 
 footer {
-  background-color: #262424; }
+  background-color: #1f351f;
+  width: 100%; }
   footer .footer__titulo {
-    padding: 3%;
+    padding-top: 2%;
     text-align: center;
     color: whitesmoke;
     font-family: 'Nunito', sans-serif; }
-  footer .footer__ol .footer__li {
-    text-decoration: none;
-    color: whitesmoke; }
+  footer ul {
+    padding-left: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  footer li {
+    margin-top: 0%;
+    margin: 2%;
+    padding: 0;
+    text-align: center; }
+  footer .fab {
+    color: white;
+    font-size: 2rem; }
+    footer .fab:hover {
+      font-size: 3rem; }
+
+.footer_light {
+  background-color: #dbd7d6d7;
+  color: #2f522f; }
+  .footer_light .footer__titulo {
+    color: #2f522f; }
+  .footer_light .fab {
+    color: #2f522f; }
 
 body {
-  background-color: #151414; }
+  background-color: #dbd7d6d7; }
 
 .carousel {
-  width: 100%; }
+  width: 100%;
+  z-index: 0; }
+
+.horaFeliz {
+  background-color: #1f351f;
+  padding: 10%; }
+  .horaFeliz h2, .horaFeliz h3 {
+    background-color: #1f351f;
+    color: #E5E7E9;
+    font-family: AmsiProNarw-Ultra;
+    text-align: center;
+    font-size: 3rem; }
+  .horaFeliz h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem; }
+
+video {
+  width: 100%;
+  margin-bottom: 3%; }
 
 .nosotros {
-  width: 85%;
-  background-color: #151414;
-  color: #E5E7E9;
-  background-color: #151414;
-  margin: 1%;
+  padding: 5%;
+  background-color: #dbd7d6d7;
+  color: #2f522f;
+  background-color: #dbd7d6d7;
+  margin: 5%;
   margin-top: 13%;
   display: grid;
   grid-template-columns: 2 auto;
   grid-template-rows: 1 auto;
   grid-template-areas: "imagen texto";
-  gap: 15%; }
+  gap: 10%; }
   .nosotros .nosotros__img {
     width: 100%;
-    grid-area: imagen;
-    margin-left: 10%; }
+    grid-area: imagen; }
     .nosotros .nosotros__img img {
       width: 100%;
       border-radius: 5%; }
@@ -186,29 +273,35 @@ body {
 .nosotros__texto {
   grid-area: texto;
   font-family: 'Nunito', sans-serif; }
+  .nosotros__texto h1, .nosotros__texto h2 {
+    font-family: AmsiProNarw-Ultra; }
 
 .restricciones {
-  width: 70% auto;
-  background-color: #dbd7d6d1;
-  color: #080707;
-  background-color: #dbd7d6d1;
-  margin: 1%;
+  width: 85% auto;
+  background-color: #dbd7d6d7;
+  color: #2f522f;
+  background-color: #dbd7d6d7;
+  margin: 5%;
   padding: 5%;
-  margin-top: 10%;
+  margin-top: 13%;
   display: grid;
   grid-template-columns: 2 auto;
   grid-template-rows: 1 auto;
   grid-template-areas: "textoRestricciones imgRestricciones";
-  gap: 5%; }
+  gap: 10%; }
   .restricciones .restricciones__img {
     grid-area: imgRestricciones; }
     .restricciones .restricciones__img img {
-      width: 80%;
-      border-radius: 5%;
-      margin-left: 15%; }
+      width: 100%;
+      border-radius: 5%; }
   .restricciones .restricciones__texto {
     grid-area: textoRestricciones;
     font-family: 'Nunito', sans-serif; }
+    .restricciones .restricciones__texto h1, .restricciones .restricciones__texto h2 {
+      font-family: AmsiProNarw-Ultra; }
+
+.bodyMenu {
+  background-color: #201e1e; }
 
 .entradas, .pizzas {
   margin-top: 5%;
@@ -231,22 +324,26 @@ body {
       padding: 15%;
       text-transform: uppercase;
       color: whitesmoke;
-      font-family: 'Nunito', sans-serif;
       position: absolute;
       top: 0;
       width: 100%;
       height: 100%;
       background: rgba(10, 18, 20, 0.7);
       opacity: 0;
-      visibility: hidden;
-      text-align: center; }
+      visibility: hidden; }
       .entradas figure .entradas__texto .entradas__titulo, .pizzas figure .entradas__texto .entradas__titulo, .pizzas figure .pizzas__texto .entradas__titulo, .pizzas figure .pizzas__texto .pizzas__titulo {
+        font-family: AmsiProNarw-Ultra;
+        letter-spacing: 0.1em;
         font-size: 3rem;
         padding: 2%;
-        padding-left: 5.5%; }
+        text-align: center; }
       .entradas figure .entradas__texto .entradas__ul, .pizzas figure .entradas__texto .entradas__ul, .pizzas figure .pizzas__texto .entradas__ul, .pizzas figure .pizzas__texto .pizzas__ul {
+        padding: 1%;
+        font-family: 'Nunito', sans-serif;
+        text-align: center;
+        padding-left: 0;
         list-style: none;
-        font-size: 1.2rem; }
+        font-size: 1.66667rem; }
     .entradas figure:hover .entradas__texto, .pizzas figure:hover .entradas__texto, .pizzas figure:hover .pizzas__texto {
       opacity: 1;
       visibility: visible; }
@@ -257,16 +354,16 @@ body {
   transition: all 500ms ease-out; }
 
 .pizzas figure .pizzas__texto {
-  padding-top: 30%; }
+  padding-top: 20%; }
 
 .pizzas figure:hover .pizzas__texto {
   opacity: 1;
   visibility: visible; }
 
 .burger {
+  padding: 0%;
   text-align: center;
-  background-color: #262424;
-  color: whitesmoke;
+  background-color: #dbd7d6d7;
   font-family: 'Nunito', sans-serif;
   opacity: 0.5;
   margin-top: 10%;
@@ -274,6 +371,7 @@ body {
   .burger .burger__titulo {
     font-size: 1.5rem; }
   .burger .burger__img {
+    width: 100%;
     border-radius: 2%; }
   .burger .burger__text .burger__ul {
     list-style: none;
@@ -284,6 +382,12 @@ body {
     transition: all 2s; }
 
 @media only screen and (max-width: 800px) {
+  .headerbg {
+    background-color: rgba(19, 41, 19, 0.748); }
+  .horaFeliz h2 {
+    font-size: 1.5rem; }
+  .horaFeliz h3 {
+    font-size: 1rem; }
   .nosotros {
     text-align: center;
     grid-template-columns: 1 auto;
@@ -291,10 +395,7 @@ body {
     grid-template-areas: "imagen"  "texto";
     gap: 3%; }
     .nosotros .nosotros__img {
-      margin-right: 27%;
-      width: 75%;
-      border-radius: 5%;
-      margin-bottom: 0 auto; }
+      border-radius: 5%; }
     .nosotros .nosotros__texto {
       text-align: center;
       margin: 3%;
@@ -305,32 +406,34 @@ body {
     grid-template-rows: 2 auto;
     grid-template-areas: "imgRestricciones" "textoRestricciones"; }
     .restricciones .restricciones__img {
-      margin-left: 10%;
-      width: 80%;
-      text-align: center;
-      border-radius: 5%; }
+      border-radius: 5%;
+      margin: 0% auto; }
     .restricciones .restricciones__texto {
       margin: 3%;
-      margin-bottom: 10%; }
+      margin-bottom: 20%; }
+  .galeria__h1 {
+    font-size: 2.30769rem; }
   .fotos {
     grid-template-columns: 1 auto;
     grid-template-rows: 10 auto;
     grid-template-areas: "titulo1" "foto1" "foto2" "foto3" "foto4" "titulo2" "foto5" "foto6" "foto7" "foto8"; }
-  .pedidos__titulo {
+  .fotos__titulo h2 {
+    width: fit-content;
+    font-size: 2rem;
     text-align: center; }
-  .pedidos__texto {
-    text-align: center; }
-  .entradas__texto .entradas__titulo, .pizzas figure .pizzas__texto .entradas__titulo, .pizzas figure .pizzas__texto .pizzas__titulo {
-    font-size: 0.6rem; }
-  .entradas__texto .entradas__ul, .pizzas figure .pizzas__texto .entradas__ul, .pizzas figure .pizzas__texto .pizzas__ul {
-    font-size: 0.6rem; }
-  .pizzas__texto .pizzas__titulo {
-    font-size: 1.2rem; }
-  .pizzas__texto .pizzas__ul {
-    font-size: 0.6rem; }
+  .fotos__titulo2 {
+    width: 100%; }
+    .fotos__titulo2 h2 {
+      width: fit-content;
+      font-size: 2rem;
+      text-align: center; }
   .pedidos__a {
     width: 70%;
     text-align: left; }
+  .pizzas__ul {
+    font-size: 0.5em; }
+  .contacto__titulo {
+    font-size: 1.5rem; }
   .contacto {
     flex-direction: column; }
     .contacto form {

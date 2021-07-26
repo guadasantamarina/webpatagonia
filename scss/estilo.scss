@@ -10,6 +10,9 @@
 $ancho: 720px; 
 $fontSize: 3rem;
 
+
+
+@import"fonts";
 @import "colores";
 @import "header";
 @import "galeria";
@@ -23,9 +26,21 @@ $fontSize: 3rem;
 
 
 
-
 @media only screen and (max-width: 800px){   
-        .nosotros{
+
+    .headerbg{
+        background-color: $fondo5;
+    }
+
+    .horaFeliz{
+        h2{
+            font-size:$fontSize/2;
+        }
+        h3{
+            font-size:$fontSize/3;
+        }
+    }
+    .nosotros{
         text-align: center;
         grid-template-columns: 1 auto;
         grid-template-rows: 2 auto;
@@ -35,10 +50,7 @@ $fontSize: 3rem;
         ;
         gap: 3%;
         .nosotros__img{
-            margin-right: 27%;
-            width: 75%;
             border-radius: 5%;
-            margin-bottom: 0 auto;
         }
         .nosotros__texto{
             text-align: center;
@@ -54,22 +66,22 @@ $fontSize: 3rem;
         "imgRestricciones"
         "textoRestricciones"
         ;
-        .restricciones__img{
-            margin-left: 10%;
-            width: 80%;
-            text-align: center;
+        .restricciones__img{          
             border-radius: 5%;
+            margin: 0% auto;
         }
         .restricciones__texto{
             margin: 3%;
-            margin-bottom: 10%;
+            margin-bottom: 20%;
 
         }
         
     }
+    .galeria__h1{
+        font-size: $fontSize/1.3;
+    }
 
     .fotos {
-    
         grid-template-columns: 1 auto;
         grid-template-rows: 10 auto;
         grid-template-areas:
@@ -86,30 +98,20 @@ $fontSize: 3rem;
         ;
     }
 
-    
-
-    .pedidos__titulo{
-        text-align: center;
-    }
-    .pedidos__texto{
-        text-align: center;
-    }
-
-    .entradas__texto{
-        .entradas__titulo{
-            font-size: $fontSize/5;
-        }
-        .entradas__ul{
-            font-size: $fontSize/5;
+    .fotos__titulo{
+        h2{
+            width: fit-content;
+            font-size: $fontSize/1.5;
+            text-align: center;
         }
     }
 
-    .pizzas__texto{
-        .pizzas__titulo{
-            font-size: $fontSize/2.5;
-        }
-        .pizzas__ul{
-            font-size: $fontSize/5;
+    .fotos__titulo2{
+        width: 100%;
+        h2{
+           width: fit-content;
+           font-size: $fontSize/1.5;
+           text-align: center;
         }
     }
 
@@ -117,9 +119,16 @@ $fontSize: 3rem;
         width: 70%;
         text-align: left;
     }
+    .pizzas__ul{
+        font-size: 0.5em;
+    }
 
+    .contacto__titulo{
+        font-size: $fontSize/2;
+    }
     .contacto{
         flex-direction: column;
+        
         form{
             text-align: center;
             font-family: $fontSize/2.7;
@@ -131,14 +140,6 @@ $fontSize: 3rem;
 
         }
     }
-
-
-   
-
-    
-
-    
-  
 }
 
 

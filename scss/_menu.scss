@@ -1,3 +1,7 @@
+.bodyMenu{
+    background-color: $fondo2;
+}
+
 .entradas{
     margin-top: 5%;
     width: 90%;
@@ -20,7 +24,6 @@
             padding: 15%;
             text-transform: uppercase;
             color: whitesmoke;
-            font-family: 'Nunito', sans-serif;
             position: absolute;
             top: 0;
             width: 100%;
@@ -28,15 +31,20 @@
             background: rgba(10, 18, 20, 0.7);
             opacity: 0;
             visibility: hidden;
-            text-align: center; 
             .entradas__titulo{
+                font-family: AmsiProNarw-Ultra;
+                letter-spacing: 0.1em;
                 font-size: $fontSize;
                 padding: 2%;
-                padding-left: 5.5%;
+                text-align: center;
             } 
             .entradas__ul{
+                padding: 1%;
+                font-family: 'Nunito', sans-serif;
+                text-align: center;
+                padding-left: 0;
                 list-style: none;
-                font-size: $fontSize/2.5;
+                font-size: $fontSize/1.8;
             }
            
         }
@@ -67,7 +75,7 @@
         }
         .pizzas__texto{
             @extend .entradas__texto;
-            padding-top: 30%;
+            padding-top: 20%;
             .pizzas__titulo{
                 @extend .entradas__titulo;
             } 
@@ -91,9 +99,9 @@
 
 
 .burger{
+    padding: 0%;
     text-align: center;
-    background-color: $fondo2;
-    color: whitesmoke;
+    background-color: $fondo3;
     font-family: 'Nunito', sans-serif;
     opacity: 0.5;
     margin-top: 10%;
@@ -102,6 +110,7 @@
         font-size: $fontSize/2;
     }
     .burger__img{
+        width: 100%;
         border-radius: 2%;
     }
     .burger__text{

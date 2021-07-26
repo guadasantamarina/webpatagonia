@@ -1,18 +1,21 @@
-$fondo3: #dbd7d6d1;
-$fondo2: #262424; 
-$fondo1: #151414; 
+$fondo3: #dbd7d6d7;
+$fondo2: #201e1e; 
+$fondo1: #dad6d6; 
+$fondo4: rgb(31, 53, 31);
+$fondo5: rgba(19, 41, 19, 0.748);
 
+$color3: rgb(47, 82, 47);
 $color1:#E5E7E9;
 $color2:#080707; 
 
 @mixin condicion ($fondo){
     background-color:($fondo);
-    @if $fondo == $fondo1{
-        color:$color1
+    @if $fondo == $fondo3{
+        color:$color3
     }
 
-        @else if $fondo == $fondo3{
-            color: $color2;
+        @else if $fondo == $fondo4{
+            color: $color1;
         }
 
 }

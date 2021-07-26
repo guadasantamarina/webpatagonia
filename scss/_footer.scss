@@ -1,17 +1,42 @@
 footer {
-    background-color: $fondo2;
-
+    background-color: $fondo4;
+    width: 100%;
     .footer__titulo{
-        padding: 3%;
+        padding-top: 2%;
         text-align: center;
         color: whitesmoke;
         font-family: 'Nunito', sans-serif;
     }
-    .footer__ol{
-        .footer__li{
-            text-decoration: none;
-            color: whitesmoke;
-        }
+    ul{
+        padding-left: 0;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    li{
+        margin-top: 0%;
+        margin: 2%;
+        padding: 0;
+        text-align: center;
+    }
+    .fab{
+        color: white;
+        font-size: $fontSize/1.5; 
+    &:hover{
+        font-size: $fontSize;
+    }
     }   
 }
 
+
+.footer_light{
+    @include condicion ($fondo3);
+    .footer__titulo{
+        color: $color3;
+    }
+    .fab{
+        color: $color3;
+    }
+}
