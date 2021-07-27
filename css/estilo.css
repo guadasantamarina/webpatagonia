@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-@font-face {
-  font-family: AmsiProNarw-Ultra;
-  src: url(/fonts/AmsiProNarw-Ultra.ttf); }
-
 body {
   background-color: #dbd7d6d7; }
 
@@ -29,7 +25,7 @@ header {
       color: #2f522f; }
     header .navbar ul li {
       font-size: 2rem;
-      font-family: AmsiProNarw-Ultra;
+      font-family: 'Lilita One', cursive;
       color: #1f351f; }
     header .navbar .submenu__ul {
       background-color: #dbd7d6d7;
@@ -49,7 +45,7 @@ header {
   position: static; }
 
 .galeria__h1 {
-  font-family: AmsiProNarw-Ultra;
+  font-family: 'Lilita One', cursive;
   text-align: center;
   font-size: 4.5rem;
   margin: 3%;
@@ -63,10 +59,10 @@ header {
   grid-template-areas: "titulo1  titulo1 titulo1 titulo1" "foto1 foto1  foto2 foto3" "foto1 foto1  foto4 foto4" "titulo2 titulo2 titulo2 titulo2" "foto8 foto8 foto7 foto7" "foto8 foto8 foto5 foto6"; }
 
 .fotos__titulo {
-  width: 100%;
+  width: 80%;
   grid-area: titulo1; }
   .fotos__titulo h2 {
-    font-family: AmsiProNarw-Ultra;
+    font-family: 'Lilita One', cursive;
     letter-spacing: 0.1em;
     padding: 4%;
     font-size: 3rem;
@@ -74,12 +70,11 @@ header {
     width: 100%; }
 
 .fotos__titulo2 {
-  grid-area: titulo2;
-  width: 100%; }
+  width: 80%;
+  grid-area: titulo2; }
   .fotos__titulo2 h2 {
-    width: 100%;
-    font-family: AmsiProNarw-Ultra;
-    padding: 1%;
+    width: fit-content;
+    font-family: 'Lilita One', cursive;
     letter-spacing: 0.1em;
     font-size: 3rem;
     text-align: left; }
@@ -177,7 +172,7 @@ header {
   background-color: #dbd7d6d7;
   color: #2f522f;
   margin: 3%;
-  font-family: AmsiProNarw-Ultra;
+  font-family: 'Lilita One', cursive;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
@@ -240,7 +235,7 @@ body {
   .horaFeliz h2, .horaFeliz h3 {
     background-color: #1f351f;
     color: #E5E7E9;
-    font-family: AmsiProNarw-Ultra;
+    font-family: 'Lilita One', cursive;
     text-align: center;
     font-size: 3rem; }
   .horaFeliz h3 {
@@ -274,7 +269,7 @@ video {
   grid-area: texto;
   font-family: 'Nunito', sans-serif; }
   .nosotros__texto h1, .nosotros__texto h2 {
-    font-family: AmsiProNarw-Ultra; }
+    font-family: 'Lilita One', cursive; }
 
 .restricciones {
   width: 85% auto;
@@ -298,7 +293,7 @@ video {
     grid-area: textoRestricciones;
     font-family: 'Nunito', sans-serif; }
     .restricciones .restricciones__texto h1, .restricciones .restricciones__texto h2 {
-      font-family: AmsiProNarw-Ultra; }
+      font-family: 'Lilita One', cursive; }
 
 .bodyMenu {
   background-color: #201e1e; }
@@ -332,7 +327,7 @@ video {
       opacity: 0;
       visibility: hidden; }
       .entradas figure .entradas__texto .entradas__titulo, .pizzas figure .entradas__texto .entradas__titulo, .pizzas figure .pizzas__texto .entradas__titulo, .pizzas figure .pizzas__texto .pizzas__titulo {
-        font-family: AmsiProNarw-Ultra;
+        font-family: 'Lilita One', cursive;
         letter-spacing: 0.1em;
         font-size: 3rem;
         padding: 2%;

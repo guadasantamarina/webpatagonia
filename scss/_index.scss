@@ -9,7 +9,7 @@
     padding: 10%;
     h2, h3{
         @include condicion ($fondo4);
-        font-family: AmsiProNarw-Ultra;
+        font-family: 'Lilita One', cursive;        
         text-align: center;
         font-size: $fontSize;
     }
@@ -55,7 +55,7 @@ video{
     grid-area: $gridArea;
     font-family: 'Nunito', sans-serif;
     h1, h2{
-        font-family: AmsiProNarw-Ultra;
+        font-family: 'Lilita One', cursive;    
     }
 }
 

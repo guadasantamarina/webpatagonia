@@ -7,7 +7,7 @@
 }
 
 .galeria__h1{
-    font-family: AmsiProNarw-Ultra;
+    font-family: 'Lilita One', cursive;    
     text-align: center;
     font-size: $fontSize*1.5;
     margin: 3%;
@@ -32,10 +32,10 @@
     
 }
 .fotos__titulo {
-    width: 100%;
+    width: 80%;
     grid-area: titulo1;
     h2{
-    font-family: AmsiProNarw-Ultra;
+    font-family: 'Lilita One', cursive;    
     letter-spacing: 0.1em;
     padding: 4%;
     font-size: $fontSize;
@@ -44,11 +44,11 @@
     }
 }
 .fotos__titulo2 {
+    width: 80%;
     grid-area: titulo2;
     h2{
         width:  fit-content;
-        font-family: AmsiProNarw-Ultra;
-        padding: 1%;
+        font-family: 'Lilita One', cursive;        
         letter-spacing: 0.1em;
         font-size: $fontSize;
         text-align: left;
