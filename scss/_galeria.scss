@@ -45,9 +45,8 @@
 }
 .fotos__titulo2 {
     grid-area: titulo2;
-    width: 100%;
     h2{
-        width: 100%;
+        width:  fit-content;
         font-family: AmsiProNarw-Ultra;
         padding: 1%;
         letter-spacing: 0.1em;
