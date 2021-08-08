@@ -397,7 +397,7 @@ video {
     .entradas figure .entradas__texto .entradas__titulo, .pizzas figure .entradas__texto .entradas__titulo, .pizzas figure .pizzas__texto .entradas__titulo, .pizzas figure .pizzas__texto .pizzas__titulo {
       font-size: 2rem;
       padding: 0%;
-      margin-top: 10%; }
+      margin-top: 15%; }
     .entradas figure .entradas__texto .entradas__ul, .pizzas figure .entradas__texto .entradas__ul, .pizzas figure .pizzas__texto .entradas__ul, .pizzas figure .pizzas__texto .pizzas__ul {
       font-size: 1rem;
       padding: 0%; }
@@ -435,7 +435,7 @@ video {
   .pizzas figure .pizzas__texto .pizzas__titulo {
     margin-top: 20%; }
   .contacto__titulo {
-    font-size: 1.5rem; }
+    font-size: 2.30769rem; }
   .contacto {
     flex-direction: row; }
     .contacto form {
