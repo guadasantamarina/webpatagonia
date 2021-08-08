@@ -16,7 +16,7 @@
 </head>
 <body class="bodyOscuro">
     <header class="headerStatic">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="headerbg container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../media/logo2.PNG" alt="logo" class="logoImg ms-auto">
@@ -27,13 +27,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown m-3">
-                            <a class="aCenter nav-link" href="fotos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galería</a>
-                            <ul class="submenu__ul dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="submenu__a dropdown-item" href="fotos.html#seccionUstedes">Ustedes</a></li>
-                                <li><a class="submenu__a dropdown-item" href="fotos.html#seccionNuestraComida">Nuestra Comida</a></li>
-                            </ul>
-                         </li>
+                        <li class="nav-item m-3">
+                            <a class="aCenter nav-link" href="fotos.html">Galería</a>
+                        </li>
                         <li class="nav-item dropdown m-3 ml-5">
                             <a class="aCenter nav-link" href="menu.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
                             <ul class="submenu__ul dropdown-menu" aria-labelledby="navbarDropdown">
@@ -47,76 +43,86 @@
                         </li>
                         <li class="nav-item m-3">
                             <a class="aCenter nav-link" href="contacto.html">Consultas</a>
-                         </li>
-                   
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    
-    
-    <h1 class="galeria__h1 text-light wow animate__animated animate__fadeIn" id="seccionUstedes">Galería de Fotos</h1>
 
-
-   <main class="fotos" >
-
-
-        <div class="fotos__titulo"> <h2 class="tituloGaleria text-light" > Ustedes</h2></div>
-        <div class="fotos__uno"><img class="fotoGaleria Uno" src="../media/chicos-bar.jpg" alt="dos-chicos-disfrutando-dentro-del-bar"></div>
-        <div class="fotos__dos"> <img class="fotoGaleria Dos" src="../media/chicas-vereda.jpg" alt="tres-amigas-sonriendo-disfrutando-en-nuestra-vereda"></div>
-        <div class="fotos__tres"><img class="fotoGaleria Tres" src="../media/mujeres-bar.jpg" alt="tres-chicas-sentadas-en-mesa-cervecera-adentro"></div>
-        <div class="fotos__cuatro"><img class="fotoGaleria Cuatro" src="../media/chicas-gin.jpg" alt="tres-chicas-disfruntando-un-gin-tonic"></div>
-     
-
-        <div class="fotos__titulo2"><h2 class="tituloGaleria text-light m-5" id="seccionNuestraComida">Nuestra comida</h2></div>
-        <div class="fotos__cinco"><img class="fotoGaleria Cinco" src="../media/burger.jpg" alt="cheese-bomb-y-doble-cuarto-de-libra"></div>
-        <div class="fotos__seis"><img class="fotoGaleria Seis" src="../media/patitas.jpg" alt="patitas-de-pollo"></div>
-        <div class="fotos__siete"><img class="fotoGaleria Siete" src="../media/pizza.jpg" alt="pizza-de-mortadela"></div>
-        <div class="fotos__ocho"><img class="fotoGaleria Ocho" src="../media/sanguche.jpg" alt="sanguche-de-bondiola"></div>
-   </main>
-
+    <div class="gallery__container">
+        <div class="gallery__img wide tall">
+            <img src="/media/chicos-bar.jpg" alt="dos-chicos-sentados-y-riendo-en-el-bar">
+        </div>
+        <div class="gallery__img">
+            <img src="/media/chicas-vereda.jpg" alt="tres-chicas-tomando-tragos-y-posando-en-la-vereda">
+        </div>
+        <div class="gallery__img">
+            <img src="/media/mujeres-bar.jpg" alt="tres-mujeres-sentadas-en-mesa-banquetas-altas-en-el-bar">
+        </div>
+        <div class="gallery__img">
+            <img src="/media/chicas-gin.jpg" alt="tres-chicas-tomando-gintonic-y-posando-en-el-bar">
+        </div>
+        <div class="gallery__img 10">
+            <img src="/media/chicos-en-el-patio.jpg" alt="noche-en-el-patio-cervcero-con-gente-sentada">
+        </div>
+        <div class="gallery__img 9">
+            <img src="/media/chicas-tomando-cerveza.jpg" alt="dos-chicas-tomando-cerveza-en-el-patio">
+        </div>
+        <div class="gallery__img 5">
+            <img src="/media/sanguche.jpg" alt="sanguche-de-bondiola">
+        </div>
+        <div class="gallery__img wide tall">
+            <img src="/media/pizza.jpg" alt="pizza-de-mortadela-y-pistacchios">
+        </div>
+        <div class="gallery__img">
+            <img src="/media/patitas.jpg" alt="nuggets-de-pollo">
+        </div>
+        <div class="gallery__img">
+            <img src="/media/burger.jpg" alt="hamburguesa-doble-con-queso">
+        </div>
+        <div class="gallery__img">
+            <img src="/media/papas-y-cerveza.jpg" alt="mesa-con-gente-comiendo-papas-y-bebiendo-cerveza">
+        </div>
+        <div class="gallery__img ">
+            <img src="/media/pizza-napolitana.jpg" alt="pizza-margarita-estilo-napolitana">
+        </div>
+    </div>
    
-   <footer  class="footer_light container-fluid">
-        <h5 class="footer__titulo">Redes Sociales</h5>
-        <ul>
+    <footer  class="footer container-fluid">
+        <div class="info">
+          <h5>Av. de Mayo 250 - Pergamino</h5>
+          <h6>Abierto de lunes a lunes a partir de las 19 hs</h6>
+        </div>
+        <div class="redes">
+        <h5>Redes Sociales</h5>
+          <ul>
             <li>
                 <a href="https://www.instagram.com/point.oficial/?hl=es-la">
-                    <i class="fab fa-instagram"></i>
+                  <i class="fab fa-instagram"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.facebook.com/pointpergamino">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
+              <a href="https://www.facebook.com/pointpergamino">
+                <i class="fab fa-facebook-f"></i>
+              </a>
             </li>
             <li>
-                <a href="https://wa.link/gu1vi3">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+              <a href="https://wa.link/gu1vi3">
+                <i class="fab fa-whatsapp"></i>
+              </a>
             </li>
-        </ul>
-    </footer>   
+          </ul>
+        </div>
+    </footer> 
 
-
-
-
-
-
-
-
-
-
-
-
-<script src="/js.js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
-
-
- 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/js.js/wow.min.js"></script>   
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 
 </body>
 </html>

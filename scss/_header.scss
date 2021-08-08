@@ -8,10 +8,7 @@ header{
     z-index: 1;
     .navbar{
         padding: 0%;
-        .headerbg{
-            background-color: $fondo3;
-            padding: 0;
-        }
+        background-color: $fondo3;
         a{
             width: 70%;
             padding: 0;
@@ -21,14 +18,12 @@ header{
         }
         .aCenter{
             width: max-content;
-            color: $color3;
+            color: $color3 !important;
         }
         ul {
             li{
                 font-size: $fontSize/1.5;
                 font-family: 'Lilita One', cursive;                
-                color: $fondo4;
-
             }
         }
         .submenu__ul{
@@ -45,4 +40,8 @@ header{
         }
        
     }
+}
+
+.headerStatic{
+    position:static;
 }

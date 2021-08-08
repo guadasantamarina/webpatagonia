@@ -22,15 +22,7 @@ $fontSize: 3rem;
 @import "index";
 @import "menu";
 
-
-
-
-@media only screen and (max-width: 800px){   
-
-    .headerbg{
-        background-color: $fondo5;
-    }
-
+@media only screen and (max-width: 600px){   
     .horaFeliz{
         h2{
             font-size:$fontSize/2;
@@ -73,64 +65,52 @@ $fontSize: 3rem;
             margin: 3%;
             margin-bottom: 20%;
 
+        }  
+    }
+    .entradas{
+        figure{
+            .entradas__texto{
+                padding: 2%;
+                .entradas__titulo{
+                    font-size: $fontSize/2.5;
+                    padding: 0%;
+                }
+                .entradas__ul{
+                    font-size: $fontSize/4;
+                    padding: 0%;
+                }    
+            }
         }
-        
     }
-    .galeria__h1{
-        font-size: $fontSize/1.3;
+    .pizzas{
+        figure{
+            .pizzas__texto{
+                .pizzas__titulo{
+                    margin-top: 15%;
+                }
+            }
+        }
     }
-
-    .fotos {
-        grid-template-columns: 1 auto;
-        grid-template-rows: 10 auto;
-        grid-template-areas:
-            "titulo1"
-            "foto1"
-            "foto2"
-            "foto3"
-            "foto4"
-            "titulo2"
-            "foto5"
-            "foto6"
-            "foto7"
-            "foto8"
-        ;
-    }
-
-    .fotos__titulo{
-        h2{
-            width: fit-content;
-            font-size: $fontSize/1.5;
+    
+    .pedidos{
+        .pedidos__titulo{
+            text-align: center;
+        }
+        .linkWhatsapp{
             text-align: center;
         }
     }
-
-    .fotos__titulo2{
-        width: 100%;
-        h2{
-           width: fit-content;
-           font-size: $fontSize/1.5;
-           text-align: center;
-        }
-    }
-
-    .pedidos__a{
-        width: 70%;
-        text-align: left;
-    }
-    .pizzas__ul{
-        font-size: 0.5em;
-    }
+    
 
     .contacto__titulo{
         font-size: $fontSize/2;
     }
     .contacto{
         flex-direction: column;
-        
         form{
             text-align: center;
-            font-family: $fontSize/2.7;
+            font-family: $fontSize/3;
+            margin:3%;
             border-left: none;
             .textArea{
                 width: 80%;
@@ -138,8 +118,123 @@ $fontSize: 3rem;
             }
 
         }
+        input{
+            font-size: $fontSize/2.5
+        }
+    }
+
+    
+}
+
+@media only screen and (min-width: 600px){
+    .wide{
+        grid-column: span 2;
+    }
+    .tall {
+        grid-row: span 2;
+    }
+    .entradas{
+        figure{
+            .entradas__texto{
+                padding: 2%;
+                .entradas__titulo{
+                    font-size: $fontSize/1.5;
+                    padding: 0%;
+                    margin-top: 10%;
+                }
+                .entradas__ul{
+                    font-size: $fontSize/3;
+                    padding: 0%;
+                }    
+            }
+        }
+    }
+    .pizzas{
+        figure{
+            .pizzas__texto{
+                .pizzas__titulo{
+                    margin-top: 20%;
+                }
+            }
+        }
+    }
+    .contacto__titulo{
+        font-size: $fontSize/2;
+    }
+    .contacto{
+        flex-direction: column;
+        form{
+            text-align: center;
+            font-family: $fontSize/3;
+            margin:3%;
+            border-left: none;
+            .textArea{
+                width: 80%;
+                margin: 2%;
+            }
+        }
+        input{
+            font-size: $fontSize/2.5
+        }
     }
 }
+
+
+
+@media only screen and (min-width: 1000px){  
+    .wide{
+        grid-column: span 2;
+    }
+    .tall {
+        grid-row: span 2;
+    }
+    .entradas{
+        figure{
+            .entradas__texto{
+                padding: 2%;
+                .entradas__titulo{
+                    font-size: $fontSize/1.4;
+                    padding: 0%;
+                    margin-top: 10%;
+                }
+                .entradas__ul{
+                    font-size: $fontSize/2;
+                    padding: 0%;
+                }    
+            }
+        }
+    }
+    .pizzas{
+        figure{
+            .pizzas__texto{
+                .pizzas__titulo{
+                    margin-top: 20%;
+                }
+            }
+        }
+    }
+    .contacto__titulo{
+        font-size: $fontSize/2;
+    }
+    .contacto{
+        flex-direction: row;
+        form{
+            text-align: left;
+            font-family: $fontSize/3;
+            margin:3%;
+            border-left: none;
+            .textArea{
+                width: 80%;
+                margin: 2%;
+            }
+    
+        }
+        input{
+            font-size: $fontSize/2.5
+        }
+    }
+    
+}    
 
 
 

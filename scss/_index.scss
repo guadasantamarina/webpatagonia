@@ -60,7 +60,8 @@ video{
 }
 
 .nosotros__texto{
-    @include textosIndex(texto)
+    @include textosIndex(texto);
+    font-size: $fontSize/2.3;
 
 }
 
@@ -88,6 +89,7 @@ video{
     }
     .restricciones__texto{
         @include textosIndex (textoRestricciones);
+        font-size: $fontSize/2.4;
         
     }
 

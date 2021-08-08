@@ -1,97 +1,29 @@
-.bodyOscuro{
-    background-color: $fondo2;
-}
-
-.headerStatic{
-    position: static;
-}
-
-.galeria__h1{
-    font-family: 'Lilita One', cursive;    
-    text-align: center;
-    font-size: $fontSize*1.5;
-    margin: 3%;
-    letter-spacing: 0.1em;
-    
-}
-
-
-.fotos {
-    grid-area: mainFotos;
+.gallery__container{
     display: grid;
-    grid-template-columns: 4 auto;
-    grid-template-rows: 6 auto;
-    grid-template-areas:
-        "titulo1  titulo1 titulo1 titulo1"
-        "foto1 foto1  foto2 foto3"
-        "foto1 foto1  foto4 foto4"
-        "titulo2 titulo2 titulo2 titulo2"
-        "foto8 foto8 foto7 foto7"
-        "foto8 foto8 foto5 foto6"
-    ;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+    grid-auto-flow: dense;
+    gap: 20px;
+    padding: 2%;
+    .gallery__img{
+        width: 100%;
+        
+        img{
+            width: 98%;
+            filter: opacity(0.9);
+        }
+        &:hover{
+            img{
+                filter: opacity(1);
+                transform: scale(1.04);
+                transition: 2s;
+            }
+        }
+    } 
+   
     
 }
-.fotos__titulo {
-    width: 80%;
-    grid-area: titulo1;
-    h2{
-    font-family: 'Lilita One', cursive;    
-    letter-spacing: 0.1em;
-    padding: 4%;
-    font-size: $fontSize;
-    text-align: left;
-    width: 100%;        
-    }
-}
-.fotos__titulo2 {
-    width: 80%;
-    grid-area: titulo2;
-    h2{
-        width:  fit-content;
-        font-family: 'Lilita One', cursive;        
-        letter-spacing: 0.1em;
-        font-size: $fontSize;
-        text-align: left;
-    }
 
-}
-.fotos__uno {
-    grid-area: foto1;
-}
-.fotos__dos {
-    grid-area: foto2;
-}
-.fotos__tres {
-    grid-area: foto3;
-}
-.fotos__cuatro {
-    grid-area: foto4;
-}
-.fotos__cinco {
-    grid-area: foto5;
-}
-.fotos__seis {
-    grid-area: foto6;
-}
-.fotos__siete {
-    grid-area: foto7;
-}
-.fotos__ocho {
-    grid-area: foto8;
-}
-.fotos__uno, .fotos__dos, .fotos__tres, .fotos__cuatro, .fotos__cuatro, .fotos__cinco, .fotos__seis, .fotos__siete, .fotos__ocho {
-    text-align: center;
-    width: 100%;
-}
-.fotoGaleria {
-    width: 80%;
-    height: 85%;
-    opacity: 0.3;
-}
-    
-.fotoGaleria:hover {
-    opacity: 1;
-    width: 95%;
-    transition: all 2s;
-}
+
+
+  
 

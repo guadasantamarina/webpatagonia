@@ -11,10 +11,8 @@ header {
   top: 0%;
   z-index: 1; }
   header .navbar {
-    padding: 0%; }
-    header .navbar .headerbg {
-      background-color: #dbd7d6d7;
-      padding: 0; }
+    padding: 0%;
+    background-color: #dbd7d6d7; }
     header .navbar a {
       width: 70%;
       padding: 0; }
@@ -22,11 +20,10 @@ header {
       width: 25%; }
     header .navbar .aCenter {
       width: max-content;
-      color: #2f522f; }
+      color: #2f522f !important; }
     header .navbar ul li {
       font-size: 2rem;
-      font-family: 'Lilita One', cursive;
-      color: #1f351f; }
+      font-family: 'Lilita One', cursive; }
     header .navbar .submenu__ul {
       background-color: #dbd7d6d7;
       border: none; }
@@ -38,84 +35,24 @@ header {
         width: fit-content;
         text-align: left; }
 
-.bodyOscuro {
-  background-color: #201e1e; }
-
 .headerStatic {
   position: static; }
 
-.galeria__h1 {
-  font-family: 'Lilita One', cursive;
-  text-align: center;
-  font-size: 4.5rem;
-  margin: 3%;
-  letter-spacing: 0.1em; }
-
-.fotos {
-  grid-area: mainFotos;
+.gallery__container {
   display: grid;
-  grid-template-columns: 4 auto;
-  grid-template-rows: 6 auto;
-  grid-template-areas: "titulo1  titulo1 titulo1 titulo1" "foto1 foto1  foto2 foto3" "foto1 foto1  foto4 foto4" "titulo2 titulo2 titulo2 titulo2" "foto8 foto8 foto7 foto7" "foto8 foto8 foto5 foto6"; }
-
-.fotos__titulo {
-  width: 80%;
-  grid-area: titulo1; }
-  .fotos__titulo h2 {
-    font-family: 'Lilita One', cursive;
-    letter-spacing: 0.1em;
-    padding: 4%;
-    font-size: 3rem;
-    text-align: left;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+  grid-auto-flow: dense;
+  gap: 20px;
+  padding: 2%; }
+  .gallery__container .gallery__img {
     width: 100%; }
-
-.fotos__titulo2 {
-  width: 80%;
-  grid-area: titulo2; }
-  .fotos__titulo2 h2 {
-    width: fit-content;
-    font-family: 'Lilita One', cursive;
-    letter-spacing: 0.1em;
-    font-size: 3rem;
-    text-align: left; }
-
-.fotos__uno {
-  grid-area: foto1; }
-
-.fotos__dos {
-  grid-area: foto2; }
-
-.fotos__tres {
-  grid-area: foto3; }
-
-.fotos__cuatro {
-  grid-area: foto4; }
-
-.fotos__cinco {
-  grid-area: foto5; }
-
-.fotos__seis {
-  grid-area: foto6; }
-
-.fotos__siete {
-  grid-area: foto7; }
-
-.fotos__ocho {
-  grid-area: foto8; }
-
-.fotos__uno, .fotos__dos, .fotos__tres, .fotos__cuatro, .fotos__cuatro, .fotos__cinco, .fotos__seis, .fotos__siete, .fotos__ocho {
-  text-align: center;
-  width: 100%; }
-
-.fotoGaleria {
-  width: 80%;
-  height: 85%;
-  opacity: 0.3; }
-
-.fotoGaleria:hover {
-  opacity: 1;
-  width: 95%;
-  transition: all 2s; }
+    .gallery__container .gallery__img img {
+      width: 98%;
+      filter: opacity(0.9); }
+    .gallery__container .gallery__img:hover img {
+      filter: opacity(1);
+      transform: scale(1.04);
+      transition: 2s; }
 
 .pedidos {
   background-image: url(../media/bar-adentro.png);
@@ -167,6 +104,8 @@ header {
     font-size: 1.30435rem;
     border-radius: 10px;
     padding: 3%; }
+    .contacto form input {
+      font-size: 1rem; }
 
 .contacto__titulo {
   background-color: #dbd7d6d7;
@@ -189,38 +128,51 @@ header {
   font-size: 1em; }
 
 footer {
+  width: 100%;
   background-color: #1f351f;
-  width: 100%; }
-  footer .footer__titulo {
-    padding-top: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  footer .info {
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+    padding: 3%;
+    border-right: whitesmoke 1px solid;
+    margin: 2%; }
+    footer .info h6 {
+      margin-top: 8%; }
+  footer .redes {
+    margin: 2%;
+    padding: 3%;
     text-align: center;
     color: whitesmoke;
     font-family: 'Nunito', sans-serif; }
-  footer ul {
-    padding-left: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  footer li {
-    margin-top: 0%;
-    margin: 2%;
-    padding: 0;
-    text-align: center; }
-  footer .fab {
-    color: white;
-    font-size: 2rem; }
-    footer .fab:hover {
-      font-size: 3rem; }
+    footer .redes ul {
+      padding-left: 0%;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      footer .redes ul li {
+        margin: 7%;
+        text-align: center; }
+        footer .redes ul li .fab {
+          color: white;
+          font-size: 1.76471rem; }
+          footer .redes ul li .fab:hover {
+            font-size: 3rem; }
 
-.footer_light {
+.footer__light {
   background-color: #dbd7d6d7;
   color: #2f522f; }
-  .footer_light .footer__titulo {
+  .footer__light .info {
+    color: #2f522f;
+    border-right: 1px solid #2f522f; }
+  .footer__light .redes {
     color: #2f522f; }
-  .footer_light .fab {
-    color: #2f522f; }
+    .footer__light .redes .fab {
+      color: #2f522f; }
 
 body {
   background-color: #dbd7d6d7; }
@@ -267,7 +219,8 @@ video {
 
 .nosotros__texto {
   grid-area: texto;
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.30435rem; }
   .nosotros__texto h1, .nosotros__texto h2 {
     font-family: 'Lilita One', cursive; }
 
@@ -291,7 +244,8 @@ video {
       border-radius: 5%; }
   .restricciones .restricciones__texto {
     grid-area: textoRestricciones;
-    font-family: 'Nunito', sans-serif; }
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem; }
     .restricciones .restricciones__texto h1, .restricciones .restricciones__texto h2 {
       font-family: 'Lilita One', cursive; }
 
@@ -376,9 +330,7 @@ video {
     width: 24rem;
     transition: all 2s; }
 
-@media only screen and (max-width: 800px) {
-  .headerbg {
-    background-color: rgba(19, 41, 19, 0.748); }
+@media only screen and (max-width: 600px) {
   .horaFeliz h2 {
     font-size: 1.5rem; }
   .horaFeliz h3 {
@@ -406,35 +358,93 @@ video {
     .restricciones .restricciones__texto {
       margin: 3%;
       margin-bottom: 20%; }
-  .galeria__h1 {
-    font-size: 2.30769rem; }
-  .fotos {
-    grid-template-columns: 1 auto;
-    grid-template-rows: 10 auto;
-    grid-template-areas: "titulo1" "foto1" "foto2" "foto3" "foto4" "titulo2" "foto5" "foto6" "foto7" "foto8"; }
-  .fotos__titulo h2 {
-    width: fit-content;
-    font-size: 2rem;
+  .entradas figure .entradas__texto, .pizzas figure .entradas__texto, .pizzas figure .pizzas__texto {
+    padding: 2%; }
+    .entradas figure .entradas__texto .entradas__titulo, .pizzas figure .entradas__texto .entradas__titulo, .pizzas figure .pizzas__texto .entradas__titulo, .pizzas figure .pizzas__texto .pizzas__titulo {
+      font-size: 1.2rem;
+      padding: 0%; }
+    .entradas figure .entradas__texto .entradas__ul, .pizzas figure .entradas__texto .entradas__ul, .pizzas figure .pizzas__texto .entradas__ul, .pizzas figure .pizzas__texto .pizzas__ul {
+      font-size: 0.75rem;
+      padding: 0%; }
+  .pizzas figure .pizzas__texto .pizzas__titulo {
+    margin-top: 15%; }
+  .pedidos .pedidos__titulo {
     text-align: center; }
-  .fotos__titulo2 {
-    width: 100%; }
-    .fotos__titulo2 h2 {
-      width: fit-content;
-      font-size: 2rem;
-      text-align: center; }
-  .pedidos__a {
-    width: 70%;
-    text-align: left; }
-  .pizzas__ul {
-    font-size: 0.5em; }
+  .pedidos .linkWhatsapp {
+    text-align: center; }
   .contacto__titulo {
     font-size: 1.5rem; }
   .contacto {
     flex-direction: column; }
     .contacto form {
       text-align: center;
-      font-family: 1.11111rem;
+      font-family: 1rem;
+      margin: 3%;
       border-left: none; }
       .contacto form .textArea {
         width: 80%;
-        margin: 2%; } }
+        margin: 2%; }
+    .contacto input {
+      font-size: 1.2rem; } }
+
+@media only screen and (min-width: 600px) {
+  .wide {
+    grid-column: span 2; }
+  .tall {
+    grid-row: span 2; }
+  .entradas figure .entradas__texto, .pizzas figure .entradas__texto, .pizzas figure .pizzas__texto {
+    padding: 2%; }
+    .entradas figure .entradas__texto .entradas__titulo, .pizzas figure .entradas__texto .entradas__titulo, .pizzas figure .pizzas__texto .entradas__titulo, .pizzas figure .pizzas__texto .pizzas__titulo {
+      font-size: 2rem;
+      padding: 0%;
+      margin-top: 10%; }
+    .entradas figure .entradas__texto .entradas__ul, .pizzas figure .entradas__texto .entradas__ul, .pizzas figure .pizzas__texto .entradas__ul, .pizzas figure .pizzas__texto .pizzas__ul {
+      font-size: 1rem;
+      padding: 0%; }
+  .pizzas figure .pizzas__texto .pizzas__titulo {
+    margin-top: 20%; }
+  .contacto__titulo {
+    font-size: 1.5rem; }
+  .contacto {
+    flex-direction: column; }
+    .contacto form {
+      text-align: center;
+      font-family: 1rem;
+      margin: 3%;
+      border-left: none; }
+      .contacto form .textArea {
+        width: 80%;
+        margin: 2%; }
+    .contacto input {
+      font-size: 1.2rem; } }
+
+@media only screen and (min-width: 1000px) {
+  .wide {
+    grid-column: span 2; }
+  .tall {
+    grid-row: span 2; }
+  .entradas figure .entradas__texto, .pizzas figure .entradas__texto, .pizzas figure .pizzas__texto {
+    padding: 2%; }
+    .entradas figure .entradas__texto .entradas__titulo, .pizzas figure .entradas__texto .entradas__titulo, .pizzas figure .pizzas__texto .entradas__titulo, .pizzas figure .pizzas__texto .pizzas__titulo {
+      font-size: 2.14286rem;
+      padding: 0%;
+      margin-top: 10%; }
+    .entradas figure .entradas__texto .entradas__ul, .pizzas figure .entradas__texto .entradas__ul, .pizzas figure .pizzas__texto .entradas__ul, .pizzas figure .pizzas__texto .pizzas__ul {
+      font-size: 1.5rem;
+      padding: 0%; }
+  .pizzas figure .pizzas__texto .pizzas__titulo {
+    margin-top: 20%; }
+  .contacto__titulo {
+    font-size: 1.5rem; }
+  .contacto {
+    flex-direction: row; }
+    .contacto form {
+      text-align: left;
+      font-family: 1rem;
+      margin: 3%;
+      border-left: none; }
+      .contacto form .textArea {
+        width: 80%;
+        margin: 2%; }
+    .contacto input {
+      font-size: 1.2rem; } }
