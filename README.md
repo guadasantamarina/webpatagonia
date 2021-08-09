@@ -11,5 +11,6 @@ Las herramientas que utilicé:
 ·Utilicé frameworks de bootstrap5 para hacer el sitio más interactivo. 
 
 Te adelanto que al ser un hosting gratuito (que de todas formas, amamos) algunas cosas no funcionen al 100%. La reproducción del video en la página principal, a pesar de estar optimizado en su peso y de tener los atributos "loop" y "autoplay" a veces falla, como es en el caso de los dispositivos móviles.
+También el display de la galería de fotos variará de acuerdo al zoom y/o tamaño de tu dispositivo. Obviamente, es adapable a todos, pero te invito a que juegues y puedas apreciarlo desde distintas perspectivas. 
 
 Estoy muy contenta con el resultado final de este camino, gracias a mis profesora Mercedes Passano y a mi tutor Luciano Busso por hacerlo más disfrutable y llevadero. 
